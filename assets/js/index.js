@@ -41,18 +41,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para cargar el ejercicio
     function loadExercise(exerciseName) {
+
         fetch(`exercises/${exerciseName}.html`)
             .then(response => response.text())
             .then(html => {
+                // Asigna el HTML sin filtrar al textarea
                 htmlCode.value = html;
+
+
+                // Asigna el HTML filtrado al srcdoc del iframe
                 resultFrame.srcdoc = html;
             })
             .catch(error => console.error('Error loading exercise:', error));
+
 
         fetch(`assets/css/${exerciseName}.css`)
             .then(response => response.text())
             .then(css => {
                 cssCode.value = css;
+
             })
             .catch(error => console.error('Error loading exercise CSS:', error));
 
@@ -62,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 jsCode.value = js;
             })
             .catch(error => console.error('Error loading exercise JavaScript:', error));
+
     }
 
     // Función para abrir una pestaña

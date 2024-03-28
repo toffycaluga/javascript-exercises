@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Exercises</title>
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="./../assets/css/charCounter.css">|
+    <link rel="stylesheet" href="./../assets/css/charCounter.css">
     <link rel="stylesheet" href="./../assets/css/clickCounter.css">
-    <link rel="stylesheet" href="./../assets/css/changeColor.css">
+
 </head>
 
 <body>
@@ -37,20 +37,22 @@
                     <button class="tablink css" id="css-tab">CSS</button>
                     <button class="tablink js" id="js-tab">JavaScript</button>
                 </div>
+                <div class="box">
+                    haz click en aguna opcion para ver el codigo
+                    <div class="tabcontent" id="html-content">
+                        <!-- Contenido HTML -->
+                        <textarea id="html-code" readonly cols="30" rows="10"></textarea>
+                    </div>
 
-                <div class="tabcontent" id="html-content">
-                    <!-- Contenido HTML -->
-                    <textarea id="html-code" readonly></textarea>
-                </div>
+                    <div class="tabcontent " id="css-content">
+                        <!-- Contenido CSS -->
+                        <textarea id="css-code" readonly cols="30" rows="10"></textarea>
+                    </div>
 
-                <div class="tabcontent " id="css-content">
-                    <!-- Contenido CSS -->
-                    <textarea id="css-code" readonly></textarea>
-                </div>
-
-                <div class="tabcontent" id="js-content">
-                    <!-- Contenido JavaScript -->
-                    <textarea id="js-code" readonly></textarea>
+                    <div class="tabcontent" id="js-content">
+                        <!-- Contenido JavaScript -->
+                        <textarea id="js-code" readonly cols="30" rows="10"></textarea>
+                    </div>
                 </div>
             </div>
         </section>
