@@ -1,0 +1,91 @@
+html,body{
+    height:100vh;
+    margin: 0; 
+    padding: 0; 
+}
+body{
+    background-color: #ccc;
+
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+header{
+    grid-area: "header";
+}
+main{
+    grid-area: "main";
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+/* estilos para el code-container */
+#code-container .box {
+    background-color: #656464;
+    width: 100%;
+    border: 1px solid #eceece;
+
+}
+
+
+
+/* Estilos para las pestañas */
+.tabs {
+    overflow: hidden;
+}
+
+.tablink {
+    background-color: #515151;
+    float: left;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.tablink:hover {
+    background-color: #ddd;
+}
+.tablink.html {
+    color: #ff9999; /* Color para HTML */
+}
+
+.tablink.css {
+   color: #99ccff; /* Color para CSS */
+}
+
+.tablink.js {
+    color: #d5ff00; /* Color para JavaScript */
+}
+
+
+/* Estilos para el contenido de las pestañas */
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+/* Estilo para mostrar el contenido activo */
+#htmlTab, #cssTab, #jsTab {
+    display: block;
+}
+
+
+footer{
+    grid-area: "footer";
+    background-color: #515151;
+    color: #fff;
+    /* height: 40px; */
+    padding: 20px;
+    max-height: 100px;
+ 
+}

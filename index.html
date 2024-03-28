@@ -4,46 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Exercises to G60</title>
-    <meta name="author" content="Abraham Lillo">
-    <meta name="description"
-        content="Esta web ontiene una serie de ejercicios prácticos de JavaScript que cubren diferentes conceptos y técnicas. Cada ejercicio se presenta en su propio archivo HTML y JavaScript, y están diseñados para proporcionar práctica en la manipulación del DOM">
+    <title>Javascript Exercises</title>
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./../assets/css/charCounter.css">|
+    <link rel="stylesheet" href="./../assets/css/clickCounter.css">
+    <link rel="stylesheet" href="./../assets/css/changeColor.css">
 </head>
 
 <body>
+    <header>
+        <h1>Javascript Exercises</h1>
+    </header>
 
-    <h1>Ejercicios d Javascript</h1>
-    <h2>tutoria 27-08-2024</h2>
-    <ul>
-        <li><a href="#" onclick="
-                loadExercise('clickCounter');
-                showExerciseCode('click_counter');
-                return false
-            ">Contador de Click</a></li>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#" id="clickCounterLink">Click Counter</a></li>
+                <li><a href="#" id="changeColorLink">Change Color</a></li>
+                <li><a href="#" id="charCounterLink">Char Counter</a></li>
+            </ul>
+        </nav>
 
+        <section class="container">
+            <div id="result-container">
+                <!-- Aquí se mostrará el resultado del ejercicio -->
+                <iframe id="result-frame"></iframe>
+            </div>
 
-        <li><a href="#" onclick="
-                loadExercise('changeColor');
-                return false
-            ">Cambio de Color</a></li>
-        <li><a href="#" onclick="
-                loadExercise('charCounter');
-                return false
-            ">Contador de Caracteres</a></li>
-    </ul>
-    <section class="container">
+            <div id="code-container">
+                <div class="tabs">
+                    <button class="tablink active html" id="html-tab">HTML</button>
+                    <button class="tablink css" id="css-tab">CSS</button>
+                    <button class="tablink js" id="js-tab">JavaScript</button>
+                </div>
 
-        <!-- Contenedor para mostrar el resultado del ejercicio -->
-        <div id="result-container">aqui se muestra el contenido</div>
-        <!-- Contenedor para mostrar el código del ejercicio -->
-        <div id="code-container">aqui se muestra el codigo</div>
-    </section>
+                <div class="tabcontent" id="html-content">
+                    <!-- Contenido HTML -->
+                    <textarea id="html-code" readonly></textarea>
+                </div>
+
+                <div class="tabcontent " id="css-content">
+                    <!-- Contenido CSS -->
+                    <textarea id="css-code" readonly></textarea>
+                </div>
+
+                <div class="tabcontent" id="js-content">
+                    <!-- Contenido JavaScript -->
+                    <textarea id="js-code" readonly></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>⌨️ con ❤️ por Abraham Lillo (Toffy Caluga) </p>
+        <p>Made with ❤️ by Abraham Lillo</p>
     </footer>
 
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/charCounter.js"></script>
+    <script src="./assets/js/changeColor.js"></script>
+    <script src="./assets/js/clickCounter.js"></script>
 </body>
 
 </html>
