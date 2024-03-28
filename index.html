@@ -16,15 +16,28 @@
     <h1>Ejercicios d Javascript</h1>
     <h2>tutoria 27-08-2024</h2>
     <ul>
-        <li><a href="#" onclick="loadExercise('clickCounter');return false">Contador de Click</a></li>
-        <li><a href="#" onclick="loadExercise('changeColor');return false">Cambio de Color</a></li>
-        <li><a href="#" onclick="loadExercise('charCounter');return false">Contador de Caracteres</a></li>
+        <li><a href="#" onclick="
+                loadExercise('clickCounter');
+                showExerciseCode('click_counter');
+                return false
+            ">Contador de Click</a></li>
+
+
+        <li><a href="#" onclick="
+                loadExercise('changeColor');
+                return false
+            ">Cambio de Color</a></li>
+        <li><a href="#" onclick="
+                loadExercise('charCounter');
+                return false
+            ">Contador de Caracteres</a></li>
     </ul>
     <section class="container">
-        <div id="exercise-container">
 
-        </div>
-        <div id="exercise-code"></div>
+        <!-- Contenedor para mostrar el resultado del ejercicio -->
+        <div id="result-container">aqui se muestra el contenido</div>
+        <!-- Contenedor para mostrar el código del ejercicio -->
+        <div id="code-container">aqui se muestra el codigo</div>
     </section>
     <footer>
         <p>⌨️ con ❤️ por Abraham Lillo (Toffy Caluga) </p>
