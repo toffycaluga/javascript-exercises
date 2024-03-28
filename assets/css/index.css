@@ -16,6 +16,27 @@ body{
 header{
     grid-area: "header";
 }
+nav ul{
+    display:flex
+}
+nav ul li{
+    margin:0px 20px ;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    border: 2px solid #515151;
+    border-radius: 5px;
+    padding: 5px;
+    color:#fff;
+    background-color: #313131;
+    transition: background-color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color:#313131;
+}
 main{
     grid-area: "main";
     display: flex;
