@@ -47,8 +47,20 @@ javascript-exercises
     - Muestra en tiempo real la cantidad de caracteres ingresados en un área de texto.
     - Archivos: char_counter.html y char_counter.js.
 ## Uso
+### (ocpion 1 )
+clona este repositorio :
+```
+    git clone https:https://github.com/toffycaluga/javascript-exercises.git
+```
+-  simplemente abre el archivo HTML correspondiente a cada ejercicio en tu navegador web. Desde el archivo index.html, también puedes acceder a cada ejercicio a través de los enlaces proporcionados.
 
-Para utilizar estos ejercicios, simplemente abre el archivo HTML correspondiente a cada ejercicio en tu navegador web. Desde el archivo index.html, también puedes acceder a cada ejercicio a través de los enlaces proporcionados.
+
+- Seleciona el ejercicio a revisar y ve como funciona , junto con su codigo .
+### (opcion 2)
+
+- Ingresa en este [enlace](https://toffycaluga.github.io/javascript-exercises/) 
+
+- Seleciona el ejercicio a revisar y ve como funciona , junto con su codigo .
 
 ### Contribución
 Si deseas contribuir a este repositorio con más ejercicios o mejoras, ¡siéntete libre de hacerlo! Simplemente realiza un fork del repositorio, implementa tus cambios y envía un pull request.
