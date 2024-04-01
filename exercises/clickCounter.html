@@ -13,4 +13,73 @@
 
 
 
-<script src="/assets/js/clickCounter.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    /* click counter css */
+
+    #container-click-count {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #container-click-count button {
+        width: 200px;
+        height: 100px;
+        font-weight: bold;
+        background-color: #0099ff;
+        border-radius: 15px;
+        color: #fff;
+        box-shadow: 12px 12px #000;
+        transition: background-color .2s ease-in-out;
+        margin: 120px;
+    }
+
+    #container-click-count button:hover {
+        background-color: #0066ff;
+    }
+
+    p {
+        font-size: 50px;
+    }
+</style>
+<script>
+    // clickcounter js
+
+
+    let contadorClicks = 0;
+
+    // se hace una funcion para aumentar en el contador
+    function aumentar() {
+        const clickCount = document.getElementById('clickCount');
+
+        // aumentamos en 1 el contador
+        contadorClicks++;
+
+        // Aqui hay 2 maneras de concatenar la variable y el string a utilizar
+
+        // clickCount.textContent = contadorClicks + " clicks";
+
+        clickCount.textContent = `${contadorClicks} clicks`;
+
+    }
+</script>

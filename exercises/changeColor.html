@@ -1,9 +1,3 @@
-<head>
-    <link rel="stylesheet" href="javascript-exercises/assets/css/changeColor.css">
-    <script src="javascript-exercises/assets/js/changeColor.js"></script>
-</head>
-
-
 <div id="container-change-color">
 
     <button onclick="cambiaColor() ;" id="changeColorButton">
@@ -11,3 +5,73 @@
     </button>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    /* change color css */
+    #container-change-color {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #changeColorButton {
+        width: 200px;
+        height: 100px;
+        font-weight: bold;
+        background-color: #0099ff;
+        border-radius: 15px;
+        color: #fff;
+        box-shadow: 12px 12px #000;
+        transition: background-color .2s ease-in-out;
+    }
+
+    #changeColorButton:hover {
+        background-color: #0066ff;
+    }
+</style>
+
+
+
+<script>
+    // change color js
+
+    function cambiaColor() {
+
+
+        const colorAleatorio = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+
+        const containerChangeColor = document.getElementById('container-change-color')
+
+
+        containerChangeColor.style.backgroundColor = colorAleatorio;
+
+    }
+
+
+
+
+
+
+</script>
